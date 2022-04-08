@@ -3,7 +3,7 @@ import Navegation from "./Components/Global/Navegation/index";
 import Footer from "./Components/Global/Footer/index";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "Routes";
-import "Assets/CSS/index.css";
+import "./Assets/CSS/index.css";
 import { ThemeProvider } from "@mui/material/styles";
 import themeMaterial, { darkTheme } from "Assets/Config/Material";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,7 +13,6 @@ import { StateReducer } from "Interfaces/Reducer";
 import useLocalStorage from "use-local-storage";
 
 function App() {
-  
   const dispatch = useDispatch();
 
   const { closeAlert } = bindActionCreators(AlertCreators, dispatch);
