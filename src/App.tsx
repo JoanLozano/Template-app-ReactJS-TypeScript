@@ -1,25 +1,62 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import Navegation from "./Components/Global/Navegation/index";
+import Footer from "./Components/Global/Footer/index";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "Routes";
+import "Assets/CSS/index.css";
+import { ThemeProvider } from "@mui/material/styles";
+import themeMaterial, { darkTheme } from "Assets/Config/Material";
+import { useDispatch, useSelector } from "react-redux";
+import { bindActionCreators } from "redux";
+import { AlertCreators, ThemeCreators } from "Storage";
+import { StateReducer } from "Interfaces/Reducer";
+import useLocalStorage from "use-local-storage";
 
 function App() {
+  
+  const dispatch = useDispatch();
+
+  const { closeAlert } = bindActionCreators(AlertCreators, dispatch);
+  const { changeTheme } = bindActionCreators(ThemeCreators, dispatch);
+
+  const { alert: modal, theme: themeReducer } = useSelector(
+    (state: StateReducer) => state
+  );
+
+  const defaultDark: boolean = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+
+  useEffect(() => {
+    if (themeReducer.theme !== "" && themeReducer.theme !== theme) {
+      setTheme(themeReducer.theme);
+    }
+
+    if (themeReducer.theme === "" && (theme === "dark" || theme === "light")) {
+      changeTheme({
+        theme: theme,
+      });
+    }
+    window.scrollTo(0, 0);
+  }, [themeReducer.theme]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme === "dark" ? darkTheme : themeMaterial}>
+      <BrowserRouter>
+        <div className="root" data-theme={theme}>
+          <Navegation />
+          <div className="container">
+            <Routes />
+          </div>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

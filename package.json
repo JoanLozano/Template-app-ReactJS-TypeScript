@@ -1,8 +1,21 @@
 {
   "name": "app-base-typescript",
   "version": "0.1.0",
+  "description": "Template base para projetos TypeScript",
+  "author": {
+    "name": "Joan Lozano",
+    "email": "joan03lozano@hotmail.com",
+    "url": "http://www.kurodesign.com"
+  },
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@mui/material": "^5.6.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -10,10 +23,14 @@
     "@types/node": "^16.11.26",
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.15",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
     "typescript": "^4.6.3",
+    "use-local-storage": "^2.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
