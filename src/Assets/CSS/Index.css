@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@200 & display=swap");
+
+:root {
+  /* Colors Theme Light*/
+  --Background: rgb(255, 255, 255);
+  --Primary: rgb(0, 75, 255);
+  --Secundary: rgb(0, 255, 225);
+  --Error: rgb(244, 67, 54);
+  --Warning: rgb(255, 174, 0);
+  --Info: rgb(33, 150, 243);
+  --Succes: rgb(0, 230, 118);
+  --Divider: rgb(64, 64, 64);
+  --Font: rgb(0, 0, 0);
+  --Shadow: rgb(127, 127, 127);
+
+  /* Text Sizes Paragraph */
+  --Text-Paragraph-Small: 14px;
+  --Text-Paragraph-Medium: 16px;
+  --Text-Paragraph-Large: 18px;
+
+  /* Text Sizes Subtitles */
+  --Text-Subtitle-Small: 20px;
+  --Text-Subtitle-Medium: 22px;
+  --Text-Subtitle-Large: 24px;
+
+  /* Text Sizes Titles */
+  --Text-Title-Small: 26px;
+  --Text-Title-Medium: 28px;
+  --Text-Title-Large: 30px;
+
+  /* Text Sizes Heading */
+  --Text-Heading-Small: 35px;
+  --Text-Heading-Medium: 40px;
+  --Text-Heading-Large: 45px;
+
+  /* Text Sizes Banners */
+  --Text-Banner-Small: 50px;
+  --Text-Banner-Medium: 55px;
+  --Text-Banner-Large: 60px;
+}
+
+[data-theme="dark"] {
+  /* Colors Theme Dark*/
+  --Background: rgb(50, 50, 50);
+  --Divider: rgb(192, 192, 192);
+  --Font: rgb(255, 255, 255);
+  --Shadow: rgb(127, 127, 127);
+}
+
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--Background);
+  color: var(--Font);
+}
+
+.root > div {
+  flex: 1;
+}
+
+/* Global */
+
+.shadow {
+  box-shadow: 2px 0px 19px var(--Shadow);
+  -webkit-box-shadow: 2px 0px 19px var(--Shadow);
+  -moz-box-shadow: 2px 0px 19px var(--Shadow);
+}

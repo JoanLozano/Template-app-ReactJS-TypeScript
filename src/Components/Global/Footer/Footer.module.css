@@ -1,0 +1,78 @@
+.gradient {
+  background: linear-gradient(120deg, #7f70f5, #0ea0ff);
+  color: var(#fff);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.links a {
+  width: max-content;
+  margin: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: larger;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.copyright p {
+  color: #fff;
+  width: max-content;
+  font-size: larger;
+  transition: 0.3s;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  opacity: 0.7;
+}
