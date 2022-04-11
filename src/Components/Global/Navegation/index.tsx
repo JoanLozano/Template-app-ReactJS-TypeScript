@@ -38,7 +38,8 @@ const Navegation: React.FC = () => {
         <div className={styles.navegationLinks}>
           <div className={styles.containerSwitch}>
             <FontAwesomeIcon
-              icon={faSun}
+              // icon={faSun}
+              icon={faMoon}
               size="lg"
               style={{ color: "white" }}
               className={styles.icon}
@@ -54,7 +55,8 @@ const Navegation: React.FC = () => {
           </label>
           <div className={styles.containerSwitch}>
             <FontAwesomeIcon
-              icon={faMoon}
+              icon={faSun}
+              // icon={faMoon}
               size="lg"
               style={{ color: "white" }}
               className={styles.icon}

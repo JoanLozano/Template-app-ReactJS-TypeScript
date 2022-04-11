@@ -67,6 +67,7 @@ body {
   min-height: 100vh;
   background: var(--Background);
   color: var(--Font);
+  transition: all 0.5s;
 }
 
 .root > div {
