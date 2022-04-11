@@ -1,0 +1,69 @@
+.img {
+  height: 50px;
+}
+
+.nav {
+  background: linear-gradient(120deg, #7f70f5, #0ea0ff);
+  color: var(#fff);
+}
+
+
+.containerModes{
+    margin: 10px 1rem;
+    width: 90%;
+}
+
+.modes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appDark{
+    margin: 0 0.25rem;
+    color: var(--color);
+}
+
+.switch{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switchclick {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 10px;
+    background: rgb(226, 226, 226);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switchclick:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--Primary);
+    border-radius: 90px;
+    transition: 0.5s;
+}
+
+.switch:checked + label {
+    background: rgb(80, 80, 80);
+}
+
+.switch:checked + label:after {
+    left: calc(100%);
+    transform: translateX(-100%);
+}
+
+.switchclick:active:after {
+    width: 20px;
+}
