@@ -36,31 +36,41 @@ const Navegation: React.FC = () => {
           <h1>Kuro Design</h1>
         </div>
         <div className={styles.navegationLinks}>
-          <div className={styles.containerSwitch}>
-            <FontAwesomeIcon
-              // icon={faSun}
-              icon={faMoon}
-              size="lg"
-              style={{ color: "white" }}
-              className={styles.icon}
-            />
-          </div>
-          <input className={styles.switch} type="checkbox" id="switch" />
-          <label
-            className={styles.switchclick}
-            htmlFor="switch"
-            onClick={handleChangeTheme}
-          >
-            Change {theme} theme
-          </label>
-          <div className={styles.containerSwitch}>
-            <FontAwesomeIcon
-              icon={faSun}
-              // icon={faMoon}
-              size="lg"
-              style={{ color: "white" }}
-              className={styles.icon}
-            />
+          <div className={styles.navegationMenu}>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            
+            <div className={styles.navegationMenuSwitch}>
+              <div className={styles.containerSwitch}>
+                <FontAwesomeIcon
+                  // icon={faSun}
+                  icon={faMoon}
+                  size="lg"
+                  style={{ color: "white" }}
+                  className={styles.icon}
+                />
+              </div>
+              <input className={styles.switch} type="checkbox" id="switch" />
+              <label
+                className={styles.switchclick}
+                htmlFor="switch"
+                onClick={handleChangeTheme}
+              >
+                Change {theme} theme
+              </label>
+              <div className={styles.containerSwitch}>
+                <FontAwesomeIcon
+                  icon={faSun}
+                  // icon={faMoon}
+                  size="lg"
+                  style={{ color: "white" }}
+                  className={styles.icon}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

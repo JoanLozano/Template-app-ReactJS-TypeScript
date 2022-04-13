@@ -14,7 +14,7 @@
   font-size: var(--Text-Paragraph-Medium);
   border: 1px solid var(--Primary);
   margin: 1rem;
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .ButtonSecondary {
@@ -33,7 +33,7 @@
   font-size: var(--Text-Paragraph-Medium);
   border: 1px solid var(--Secondary);
   margin: 1rem;
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .buttonSuccess {
@@ -52,7 +52,7 @@
   font-size: var(--Text-Paragraph-Medium);
   border: 1px solid var(--Success);
   margin: 1rem;
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .buttonInfo {
@@ -71,7 +71,7 @@
   font-size: var(--Text-Paragraph-Medium);
   border: 1px solid var(--Info);
   margin: 1rem;
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .buttonWarning {
@@ -90,7 +90,7 @@
   font-size: var(--Text-Paragraph-Medium);
   border: 1px solid var(--Warning);
   margin: 1rem;
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .buttonError {
@@ -109,5 +109,5 @@
   font-size: var(--Text-Paragraph-Medium);
   border: 1px solid var(--Error);
   margin: 1rem;
-  max-width: 300px;
+  max-width: 150px;
 }

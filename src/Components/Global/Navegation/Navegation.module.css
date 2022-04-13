@@ -33,11 +33,46 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
 h1:hover {
   opacity: 0.7;
 }
 
 .navegationLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  padding-right: 1rem;
+}
+
+.navegationMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  margin: 0.25rem;
+  transition: 0.3s;
+}
+
+.navegationMenu > a {
+  width: max-content;
+  margin: 0px 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--Text-Paragraph-Large);
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.navegationMenuSwitch {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -72,7 +107,7 @@ h1:hover {
   text-indent: -9999px;
   width: 40px;
   height: 10px;
-  background: rgb(226, 226, 226); 
+  background: rgb(226, 226, 226);
   display: block;
   border-radius: 100px;
   position: relative;
@@ -101,4 +136,50 @@ h1:hover {
 
 .switchclick:active:after {
   width: 20px;
+}
+
+@media (max-width: 850px) {
+  .navegationLinks {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 80px;
+    background: #0ea0ff;
+    height: 100%;
+  }
+
+  .navegationMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 3rem;
+    margin: 0.25rem;
+    transition: 0.3s;
+  }
+
+  .navegationMenu > a {
+    width: max-content;
+    margin: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--Text-Paragraph-Large);
+    transition: 0.3s;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+  .navegationMenuSwitch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    padding-right: 1rem;
+  }
 }
