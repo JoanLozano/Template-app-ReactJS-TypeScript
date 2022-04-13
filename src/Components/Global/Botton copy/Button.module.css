@@ -1,0 +1,113 @@
+.buttonPrimary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Font);
+  background-color: var(--Primary);
+  outline: none;
+  border-radius: 5px;
+  min-width: 100px;
+  height: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--Text-Paragraph-Medium);
+  border: 1px solid var(--Primary);
+  margin: 1rem;
+  max-width: 300px;
+}
+
+.ButtonSecondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Font);
+  background-color: var(--Secondary);
+  outline: none;
+  border-radius: 5px;
+  min-width: 100px;
+  height: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--Text-Paragraph-Medium);
+  border: 1px solid var(--Secondary);
+  margin: 1rem;
+  max-width: 300px;
+}
+
+.buttonSuccess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Font);
+  background-color: var(--Success);
+  outline: none;
+  border-radius: 5px;
+  min-width: 100px;
+  height: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--Text-Paragraph-Medium);
+  border: 1px solid var(--Success);
+  margin: 1rem;
+  max-width: 300px;
+}
+
+.buttonInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Font);
+  background-color: var(--Info);
+  outline: none;
+  border-radius: 5px;
+  min-width: 100px;
+  height: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--Text-Paragraph-Medium);
+  border: 1px solid var(--Info);
+  margin: 1rem;
+  max-width: 300px;
+}
+
+.buttonWarning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Font);
+  background-color: var(--Warning);
+  outline: none;
+  border-radius: 5px;
+  min-width: 100px;
+  height: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--Text-Paragraph-Medium);
+  border: 1px solid var(--Warning);
+  margin: 1rem;
+  max-width: 300px;
+}
+
+.buttonError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Font);
+  background-color: var(--Error);
+  outline: none;
+  border-radius: 5px;
+  min-width: 100px;
+  height: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--Text-Paragraph-Medium);
+  border: 1px solid var(--Error);
+  margin: 1rem;
+  max-width: 300px;
+}

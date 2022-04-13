@@ -8,6 +8,7 @@ export default function Routes() {
   return (
     <Router>
       <Route index element={<Home />} />
+      <Route path="/login" element={<Home />} />
       <Route path="/About" element={<About />} />
     </Router>
   );

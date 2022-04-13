@@ -3,15 +3,17 @@
 :root {
   /* Colors Theme Light*/
   --Background: rgb(255, 255, 255);
-  --Primary: rgb(0, 75, 255);
-  --Secundary: rgb(0, 255, 225);
-  --Error: rgb(244, 67, 54);
-  --Warning: rgb(255, 174, 0);
-  --Info: rgb(33, 150, 243);
-  --Succes: rgb(0, 230, 118);
+  --Primary: #007bff;
+  --Secondary: #34ceb7;
+  --Error: #dc3545;
+  --Warning: #ffc107;
+  --Info: #17a2b8;
+  --Success: rgb(0, 230, 118);
   --Divider: rgb(64, 64, 64);
   --Font: rgb(0, 0, 0);
   --Shadow: rgb(127, 127, 127);
+  --gradient-1: linear-gradient(120deg, #7f70f5, #0ea0ff);
+  --gradient-2: linear-gradient(120deg, #0ea0ff, #7f70f5);
 
   /* Text Sizes Paragraph */
   --Text-Paragraph-Small: 14px;
